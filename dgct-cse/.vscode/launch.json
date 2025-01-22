@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Reception",
+            "request": "launch",
+            "mainClass": "cse.basic.lld.Reception",
+            "projectName": "dgct-cse"
+        },
+        {
+            "type": "java",
+            "name": "Access",
+            "request": "launch",
+            "mainClass": "cse.basic.lld.Access",
+            "projectName": "dgct-cse"
+        },
+        {
+            "type": "java",
             "name": "CollectionCrud",
             "request": "launch",
             "mainClass": "cse.basic.CollectionCrud",
