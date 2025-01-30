@@ -1,0 +1,248 @@
+Programming:
+	data
+	operations: Create Read Update Delete
+
+Languages:
+	C, Python, Java, Java Script, Dot net, PHP,
+
+
+Applications:
+Console/ Desktop
+Web
+Mobile
+IoT
+.
+.
+
+
+Supporting:
+Product:
+	eg: Amazon, Zoho, Microsoft,
+Service:
+	eg: TCS, Accenture, Capgemeini,..
+
+
+catia: Construction and Automobile
+Tally: Finance and accounts
+EKart: Logistics
+.
+.
+
+Web Applications:
+eg: amazon(ecommerce)
+general public: static webapp/ public app
+
+content wont change often
+eg: portfolio, blogs, wiki, 
+required skills: html, css, bootstrap, tailwind css, js
+
+ERP: dynamic webapp/ private:
+content changes based on person, time, place
+eg: ecommerce, google map, GitHub, linkedin, swiggy
+	
+
+
+
+Applciations:
+Front end
+Back end: 
+	Spring boot>> url based actions
+		Controller>> class with URL based functions
+	Hibernate: Object Relational Mapping
+		Entity class
+		Repository>> save, findAll, findById, delete
+		Service>> implementations of repository
+
+Data end
+	
+
+Prerequisite:
+	JDK
+	Maven
+	VS CODE
+	MySQL 
+
+	Open Command prompt:
+		java --version
+		mvn --version
+		mysql --version
+
+	Web service:
+	XML: SOAP API
+	JSON:	Rest API
+		{
+			"key":value
+		}
+
+		
+		To Create Spring boot project:
+			visit: Spring Initializr
+				start.spring.io		
+
+		SpringBoot: comprehensive package:
+				Core, Web, JDBC, 
+
+		java.io
+		java.util
+		java.lang
+		java.sql
+		java.awt
+
+		Scanner
+		Thread
+		File
+		System
+		Runnable
+		Runtime
+		StringBuilder
+
+		nextInt
+		nextLong
+		readLines
+		notifyAll
+		equalsIgnoreCase
+
+
+Inversion of Control:
+container where you have beans stored
+
+Component, Configuration, Service, Repository, Controller, Bean
+
+
+Dependency Injection:
+injecting bean object unlike following typical way 
+Classname obj=new Classname();
+
+Autowired
+
+
+
+Controller/RestController:
+Responsible to handle user requs
+via urls
+
+PostMapping	>> Create/Insert
+GetMapping	>> Read
+PutMapping	>> Update
+DeleteMapping>> Delete
+
+
+Front end:
+thymeleaf
+
+to download dependency:
+visit: 
+https://mvnrepository.com
+
+
+
+Browser>> Controller>> template
+
+
+
+
+
+   https://github.com/razzaksr/DGCT-B1-JFSD
+
+
+
+
+
+	Java Basics:
+
+		class:
+			data members
+			member methods/ functions
+
+		Data types: int, float, char
+		Wrapper Classes: Integer, Float, Character>> java.lang
+	type conversion:
+		type casting: (int)char
+		type parsing: String to other data types via wrappers
+			eg: String magic = "89.4";
+				magic + 4;
+
+				89.44	
+	Double.parseDouble
+
+		Operators:
+		
+		Array
+		Collections: to overcome drawbacks of array:
+			dynamic m/y, size
+			inbuilt methods to perform basic crud to advance
+			secure:
+				eg: ArrayList>> storage class
+					object for array list
+						add, get, remove, set
+			iterable>> interface
+			Collections
+			Collection
+			List:	ArrayList, Vector, Queue, Stack, LinkedList
+			Set: HashSet, TreeSet, LinkedHashSet
+			Map: Hashtable, HashMap, TreeMap
+
+
+
+	Object Oriented Programming:
+		issue/ requirement/ problem 
+
+		Applications:
+
+		Class, Objects, Encapsulation, Polymorphism, 
+		Inheritance, Abstraction
+
+		Encapsulation:
+		Constructor
+			priority
+			Initialization
+
+
+Full stack development:
+	Web application:
+	
+	Front end/ Presentation:
+		thyemeaf >>html + Spring framework
+	Back end/ Business:
+		Spring boot>> Spring framework
+	Data end/ Data logic:
+		MySQL
+
+
+
+
+Spring framework:
+	Core, Web, Aspect oriented programming, jdbc, cloud, security,....
+
+	requires manual configuration on beans, inversion of control, dependency injection
+
+	Spring Boot: Comprehensive model
+		no manual config required
+ 
+
+
+To create spring boot project:
+visit>> start.spring.io
+
+Back end:
+	
+	Controller: Web Controller
+		accept the request from user( url )
+		Class with mapping functions
+			Mapping:(annotation on top of fun)
+				PostMapping
+				GetMapping
+				PutMapping
+				DeleteMapping
+	Template:
+			html files
+		<html xmlns:th="http://www.thymeleaf.org">
+			.....
+		</html>
+
+
+
+
+
+breowser>> localhost:8081>> controller>> template
+
