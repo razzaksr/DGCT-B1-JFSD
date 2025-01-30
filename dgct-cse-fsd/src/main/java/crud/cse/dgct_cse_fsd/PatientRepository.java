@@ -3,6 +3,9 @@ package crud.cse.dgct_cse_fsd;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.stereotype.Repository;
+
+@Repository // pojo into bean
 public class PatientRepository {
     // data logic/ storage
     private List<Patient> myPatients = new ArrayList<>();
