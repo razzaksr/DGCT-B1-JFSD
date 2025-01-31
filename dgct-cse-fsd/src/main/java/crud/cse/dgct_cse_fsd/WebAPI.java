@@ -6,7 +6,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 
 @Controller
 public class WebAPI {
@@ -47,5 +49,16 @@ public class WebAPI {
         }).toList();
         model.addAttribute("total", temp);
         return "view";
+    }
+    @GetMapping("/edit/{primary}")
+    public String receiveEdit(@PathVariable int primary, Model model){
+        Patient retrieved =  repo.findById(primary).get();
+        model.addAttribute("existingPatient", retrieved);
+        return "update";
+    }
+    @GetMapping("/remove/{key}")
+    public String removing(@PathVariable int key){
+        repo.deleteById(key);
+        return "index";
     }
 }

@@ -12,6 +12,7 @@
             <tr>
                 <th>Id</th><th>Name</th><th>Age</th>
                 <th>Weight</th><th>Height</th><th>BMI</th>
+                <th>Actions</th>
             </tr>
         </thead>
         <tbody th:each="current:${total}">
@@ -22,6 +23,10 @@
                 <td th:text="${current.patientWeight}"></td>
                 <td th:text="${current.patientHeight}"></td>
                 <td th:text="${current.patientBmi}"></td>
+                <td>
+                    <a th:href="@{'/edit/'+${current.patientId}}">Edit</a>
+                    <a th:href="@{'/remove/'+${current.patientId}}">DELETE</a>
+                </td>
             </tr>
         </tbody>
     </table>

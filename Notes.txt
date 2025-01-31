@@ -328,6 +328,28 @@ userinterface extends JpaRepository<POJO, ID-Type>{
 }
 
 
+Spring Thymeleaf>> Spring Controller>> Hibernate >> MySQL
+
+to register new patient:
+controller>> register>> controller>> repository>> database
+
+
+to view all patients:
+controller>> repository>>findAll>> database >> controller >>view page
+
+to view obese
+controller> repository>> findAll>>database >> controller>> filter >> view
+
+to delete:
+view>> controller >> repository>> delete >> database >> controller>> view
+
+to update:
+view>> controller >> repository>> findById>> database >> controller >> update page(put) >> controller >> repository>> save>> database
+
+http://localhost:8081/edit/11
+
+
+https://forms.gle/bmjc3U8N2mU5TJSa7
 
 
 
