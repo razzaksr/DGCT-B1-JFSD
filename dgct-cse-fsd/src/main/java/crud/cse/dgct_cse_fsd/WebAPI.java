@@ -27,15 +27,25 @@ public class WebAPI {
     @PostMapping("/new")
     public String regitering(Patient patient){
         //System.out.println("What i have received from page "+patient.getPatientName());
-        repo.save(patient);
+        double tempHeight = patient.getPatientHeight();
+        double tempWeight = patient.getPatientWeight();
+        tempHeight/=100;// cm to m
+        patient.setPatientBmi(tempWeight/(tempHeight*tempHeight));
+        repo.save(patient); 
         return "index";
     }
     @GetMapping("/view")
     public String view(Model model){
+        List<Patient> temp = repo.findAll();
+        model.addAttribute("total", temp);
         return "view";
     }
     @GetMapping("/obese")
     public String obese(Model model){
+        List<Patient> temp = repo.findAll().stream().filter(obj->{
+            return obj.getPatientBmi()>30.1;
+        }).toList();
+        model.addAttribute("total", temp);
         return "view";
     }
 }
