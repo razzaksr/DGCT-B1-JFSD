@@ -244,5 +244,13 @@ Back end:
 
 
 
-breowser>> localhost:8081>> controller>> template
+browser>> localhost:8081>> controller>> template
 
+to register new patient:
+controller>> register page >> controller >> repository>> save
+
+to view all patients:
+controller>> repository>>findAll>> view page
+
+to view obese
+controller> repository>> findAllObese>> view

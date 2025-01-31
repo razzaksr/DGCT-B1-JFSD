@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Patients</title>
+</head>
+<body>
+    <h1>Patients</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th><th>Name</th><th>Age</th>
+                <th>Weight</th><th>Height</th><th>BMI</th>
+            </tr>
+        </thead>
+        <tbody th:each="current:${total}">
+            <tr>
+                <td th:text="${current.patientId}"></td>
+                <td th:text="${current.patientName}"></td>
+                <td th:text="${current.patientAge}"></td>
+                <td th:text="${current.patientWeight}"></td>
+                <td th:text="${current.patientHeight}"></td>
+                <td th:text="${current.patientBmi}"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
