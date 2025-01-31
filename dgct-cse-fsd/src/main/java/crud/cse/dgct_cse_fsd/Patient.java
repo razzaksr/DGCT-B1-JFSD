@@ -1,6 +1,11 @@
 package crud.cse.dgct_cse_fsd;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
 public class Patient {
+    @Id
     private int patientId;
     private String patientName;
     private int patientAge;
