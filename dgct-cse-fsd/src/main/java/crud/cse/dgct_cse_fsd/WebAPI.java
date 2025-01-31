@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
 public class WebAPI {
-    @Autowired // dependency injection
-    private PatientRepository patientRepository;
+    @Autowired
+    HospitalRepo repo;
     // http://localhost:8081/
     @GetMapping("/")
     public String showLand(){
@@ -27,20 +27,15 @@ public class WebAPI {
     @PostMapping("/new")
     public String regitering(Patient patient){
         //System.out.println("What i have received from page "+patient.getPatientName());
-        patientRepository.save(patient);
-        System.out.println(patientRepository.findAll().size());
+        repo.save(patient);
         return "index";
     }
     @GetMapping("/view")
     public String view(Model model){
-        List<Patient> temp = patientRepository.findAll();
-        model.addAttribute("total", temp);
         return "view";
     }
     @GetMapping("/obese")
     public String obese(Model model){
-        List<Patient> temp = patientRepository.findAllByObese();
-        model.addAttribute("total", temp);
         return "view";
     }
 }

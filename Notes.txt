@@ -254,3 +254,82 @@ controller>> repository>>findAll>> view page
 
 to view obese
 controller> repository>> findAllObese>> view
+
+
+Data end: sql
+MySQL
+
+database
+table>> fields/ column
+rows
+
+
+Hibernate/ Jakarta Persistence API
+between backend and database
+no need to write a query
+Object - Relational mapping
+
+conversion java object into records
+records into java object
+
+Repository>> interface
+JpaRepository
+CrudRepository
+
+
+save>> create/ update
+findAll>> read
+findById>> read b y primary key
+delete>> delete
+
+
+
+dependency for hibernate:
+	spring-boot-starter-data-jpa
+
+dependency for database>> mysql:
+	mysqlconnector
+
+
+<!-- https://mvnrepository.com/artifact/com.mysql/mysql-connector-j -->
+	<dependency>
+		<groupId>com.mysql</groupId>
+		<artifactId>mysql-connector-j</artifactId>
+		<version>9.2.0</version>
+	</dependency>
+
+	<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-jpa -->
+	<dependency>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-data-jpa</artifactId>
+		<version>3.4.1</version>
+	</dependency>
+
+
+Configuring database :
+1. create database cse in your server:
+	MySQL workbench:
+		create database `cse`;
+	XAMPP:
+			
+
+To create table in MySQL from project:
+@Entity >> top of your class 
+
+To Repository: 
+interface through which ORM functionalities happens
+
+backend to database
+database to backend
+
+@Repository
+userinterface extends JpaRepository<POJO, ID-Type>{
+	
+}
+
+
+
+
+
+
+
